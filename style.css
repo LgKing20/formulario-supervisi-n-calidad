@@ -1,0 +1,102 @@
+/* Estilos generales y de la página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eef2f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+
+/* Estilos del formulario */
+form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+
+/* Estilos para las etiquetas de las preguntas */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+    font-size: 16px;
+}
+
+
+/* Estilos específicos para el texto de ayuda (subTexto) */
+#subTexto {
+    font-weight: normal;
+    font-size: 0.9em; /* Más pequeño que el label, como lo pediste */
+    color: #777;
+    margin-top: -5px; /* Para que quede cerca de la pregunta */
+    margin-bottom: 15px; /* Espaciado con el input siguiente */
+    font-style: italic; /* Resalta con cursiva para indicar que es una nota */
+}
+
+
+/* Estilos para todos los campos de entrada y select */
+input:not([type="submit"]),
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 25px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+
+/* Estilo para el estado 'focus' de los campos */
+input:not([type="submit"]):focus,
+select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+    outline: none;
+}
+
+
+/* Estilo para las opciones del select */
+select option[value=""][disabled] {
+    color: #999;
+}
+
+
+/* Estilos del botón de envío */
+button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+
+/* Estilo para el botón al pasar el mouse por encima */
+button[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+
+/* Ocultar las etiquetas <br> para un mejor control del espaciado */
+form br {
+    display: none;
+}
